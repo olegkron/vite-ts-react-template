@@ -7,11 +7,12 @@ export const logError = (error: Error, additionalInfo?: any): void => {
   // Example: Sentry.captureException(error, { extra: additionalInfo });
 }
 
-export const withErrorHandling = <TArgs extends any[], TResult>(
-  fn: (...args: TArgs) => TResult,
-  errorMessage: string,
-): ((...args: TArgs) => TResult | null) => {
-  return (...args: TArgs): TResult | null => {
+export const withErrorHandling =
+  <TArgs extends any[], TResult>(
+    fn: (...args: TArgs) => TResult,
+    errorMessage: string,
+  ): ((...args: TArgs) => TResult | null) =>
+  (...args: TArgs): TResult | null => {
     try {
       return fn(...args)
     } catch (error) {
@@ -19,13 +20,13 @@ export const withErrorHandling = <TArgs extends any[], TResult>(
       return null
     }
   }
-}
 
-export const withErrorHandlingAsync = <TArgs extends any[], TResult>(
-  fn: (...args: TArgs) => Promise<TResult>,
-  errorMessage: string,
-): ((...args: TArgs) => Promise<TResult | null>) => {
-  return async (...args: TArgs): Promise<TResult | null> => {
+export const withErrorHandlingAsync =
+  <TArgs extends any[], TResult>(
+    fn: (...args: TArgs) => Promise<TResult>,
+    errorMessage: string,
+  ): ((...args: TArgs) => Promise<TResult | null>) =>
+  async (...args: TArgs): Promise<TResult | null> => {
     try {
       return await fn(...args)
     } catch (error) {
@@ -33,4 +34,3 @@ export const withErrorHandlingAsync = <TArgs extends any[], TResult>(
       return null
     }
   }
-}

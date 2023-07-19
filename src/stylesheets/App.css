@@ -1,0 +1,69 @@
+.row {
+    flex-direction: row
+}
+
+.ac {
+    align-items: center;
+}
+
+.afe {
+    align-items: flex-end;
+}
+
+.afs {
+    align-items: flex-start;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.jfe {
+    justify-content: flex-end;
+}
+
+.jsb {
+    justify-content: space-between;
+}
+
+.jfs {
+    justify-content: flex-start;
+}
+
+.f1 {
+    flex: 1
+}
+
+.gap-xs {
+    gap: var(--sp-xs)
+}
+
+.gap-sm {
+    gap: var(--sp-sm)
+}
+
+.gap-md {
+    gap: var(--sp-md)
+}
+
+.gap-lg {
+    gap: var(--sp-lg)
+}
+
+.gap-xl {
+    gap: var(--sp-xl)
+}
+
+.hide-down {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.show-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-out {
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
