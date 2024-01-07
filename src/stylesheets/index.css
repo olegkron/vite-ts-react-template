@@ -1,126 +1,149 @@
 :root {
-    --st-br-xl: 20px;
-    --st-br-lg: 16px;
-    --st-br-md: 12px;
-    --st-br-sm: 8px;
-    --st-br-xs: 4px;
-    --sp-xxl: 48px;
-    --sp-xl: 32px;
-    --sp-lg: 24px;
-    --sp-md: 12px;
-    --sp-sm: 8px;
-    --sp-xs: 4px;
-    --sp-xxs: 2px;
-    --sp-screen-v: 20px;
-    --sp-screen-h: 20px;
+	--st-br-xl: 20px;
+	--st-br-lg: 16px;
+	--st-br-md: 12px;
+	--st-br-sm: 8px;
+	--st-br-xs: 4px;
+	--sp-xxl: 48px;
+	--sp-xl: 32px;
+	--sp-lg: 24px;
+	--sp-md: 12px;
+	--sp-sm: 8px;
+	--sp-xs: 4px;
+	--sp-xxs: 2px;
+	--sp-screen-v: 20px;
+	--sp-screen-h: 20px;
 
-    --color-base-background: #000000;
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #fafafa;
+	--color-base-background: #000000;
+	--color-text-primary: #ffffff;
+	--color-text-secondary: #fafafa;
 
-    color-scheme: light dark;
-    font-family: Poppins, sans-serif;
-    font-size: 16px; /* base font size, 1rem */
-    -webkit-font-smoothing: antialiased;
-    font-synthesis: none;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: 100%;
-
+	color-scheme: light dark;
+	font-family: Poppins, sans-serif;
+	font-size: 16px; /* base font size, 1rem */
+	-webkit-font-smoothing: antialiased;
+	font-synthesis: none;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: 100%;
 }
 
-header, main, footer, aside, nav, section, article, figure, figcaption, ul, ol, li {
-    display: flex;
+header,
+main,
+footer,
+aside,
+nav,
+section,
+article,
+figure,
+figcaption,
+ul,
+ol,
+li {
+	display: flex;
 }
 
 body {
-    background-color: var(--color-base-background);
-    box-sizing: border-box;
-    display: flex;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    width: 100vw;
-    scrollbar-width: none;
+	background-color: var(--color-base-background);
+	box-sizing: border-box;
+	display: flex;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100vw;
+	scrollbar-width: none;
 }
 
 div {
-    box-sizing: border-box;
-    color: var(--color-text-primary);
-    display: flex;
-    flex-direction: column;
-    scrollbar-width: none;
+	box-sizing: border-box;
+	color: var(--color-text-primary);
+	display: flex;
+	flex-direction: column;
+	scrollbar-width: none;
 }
 
 div::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, button, input, label, span, li {
-    box-sizing: border-box;
-    color: var(--color-text-primary);
-    font-family: inherit;
-    margin: 0;
-    padding: 0;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input,
+label,
+span,
+li {
+	box-sizing: border-box;
+	color: var(--color-text-primary);
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-ul, ol, li {
-    margin-block: 0;
-    margin-inline: 0;
-    padding-inline: 0;
+ul,
+ol,
+li {
+	margin-block: 0;
+	margin-inline: 0;
+	padding-inline: 0;
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: 600;
+	font-size: 2rem;
+	font-weight: 600;
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
+	font-size: 1.5rem;
+	font-weight: 500;
 }
 
 h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
+	font-size: 1.25rem;
+	font-weight: 500;
 }
 
 h4 {
-    font-size: 1rem;
-    font-weight: 500;
+	font-size: 1rem;
+	font-weight: 500;
 }
 
 h5 {
-    font-size: 0.875rem;
-    font-weight: 500;
+	font-size: 0.875rem;
+	font-weight: 500;
 }
 
 p {
-    display: inline;
-    font-size: 1rem;
-    font-weight: 400;
+	display: inline;
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 .body1 {
-    color: var(--color-text-secondary);
-    font-size: 0.85rem;
+	color: var(--color-text-secondary);
+	font-size: 0.85rem;
 }
 
 button {
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    line-height: 0;
-    outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: 500;
+	line-height: 0;
+	outline: none;
 }

@@ -3,6 +3,6 @@ declare const identifiersMap: CssIdentifiersMap
 
 export default identifiersMap
 
-export type CssIdentifiersMap = {
-  "body1": string|undefined
+export interface CssIdentifiersMap {
+	body1: string | undefined
 }

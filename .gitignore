@@ -4,6 +4,8 @@
 /.pnp
 .pnp.js
 
+pnpm-lock.yaml
+
 # testing
 /coverage
 
@@ -60,6 +62,7 @@ dist-ssr
 
 # Editor directories and files
 .idea
+.idea/*
 .vscode/*
 !.vscode/extensions.json
 *.suo
@@ -67,4 +70,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
 .stylelintcache
+.env
+
+*.lockb

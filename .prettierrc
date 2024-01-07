@@ -3,5 +3,18 @@
   "trailingComma": "all",
   "semi": false,
   "bracketSameLine": false,
-  "printWidth": 120
+  "printWidth": 180,
+  "tabWidth": 1,
+  "useTabs": true,
+  "arrowParens": "avoid",
+  "endOfLine": "auto",
+    "overrides": [
+        {
+        "files": "*.json",
+        "options": {
+            "printWidth": 200
+        }
+        }
+    ]
 }
+
