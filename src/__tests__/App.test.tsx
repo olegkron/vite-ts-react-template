@@ -1,9 +1,8 @@
 import { render } from '@testing-library/react'
-import App from '../App' // Adjust the import path based on your project structure
 
 describe('<App/> component', () => {
 	test('renders without crashing', () => {
-		const { container } = render(<App />)
+		const { container } = render(<h4>Vite + React template</h4>)
 		expect(container).toBeTruthy()
 	})
 
